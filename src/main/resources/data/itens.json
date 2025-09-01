@@ -1,0 +1,40 @@
+[
+  {
+    "id": "MLA123456789",
+    "titulo": "iPhone 13 Pro Max 256GB",
+    "preco": 4500.00,
+    "moeda": "BRL",
+    "condicao": "novo",
+    "freteGratis": true,
+    "quantidadeVendida": 150,
+    "quantidadeDisponivel": 25,
+    "fotos": [
+      "https://http2.mlstatic.com/D_NQ_NP_123456-MLA123456789_123456-O.jpg",
+      "https://http2.mlstatic.com/D_NQ_NP_123456-MLA123456789_123456-O.jpg"
+    ],
+    "descricao": "iPhone 13 Pro Max 256GB, cor grafite, com garantia de 1 ano. Inclui carregador, cabo e fones de ouvido originais.",
+    "vendedor": {
+      "id": 12345,
+      "apelido": "loja_oficial",
+      "reputacao": "verde",
+      "totalTransacoes": 1500,
+      "dataRegistro": "2020-05-15"
+    }
+  },
+  {
+    "id": "MLA987654321",
+    "titulo": "Samsung Galaxy S21 Ultra 512GB",
+    "preco": 3800.00,
+    "moeda": "BRL",
+    "condicao": "novo",
+    "freteGratis": true,
+    "quantidadeVendida": 89,
+    "quantidadeDisponivel": 12,
+    "fotos": [
+      "https://http2.mlstatic.com/D_NQ_NP_987654-MLA987654321_987654-O.jpg"
+    ],
+
+    "descricao": "Samsung Galaxy S21 Ultra 512GB, cor preto, com caneta S-Pen inclusa."
+  }
+
+]
