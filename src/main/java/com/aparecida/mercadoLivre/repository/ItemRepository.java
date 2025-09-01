@@ -55,10 +55,11 @@ public class ItemRepository {
      * @return Item encontrado
      * @throws ItemNaoEncontradoException se o item não existir
      */
-    public Item buscarPorId(String id) throws Throwable {
+    public Item buscarPorId(String id) {
         Item item = itens.get(id);
         if (item == null) {
-            throw new Throwable("Item com ID " + id + " não encontrado");
+            // Deve lançar a exceção personalizada
+            throw new ItemNaoEncontradoException("Item com ID " + id + " não encontrado");
         }
         return item;
     }
@@ -164,4 +165,5 @@ public class ItemRepository {
             throw new RuntimeException("Erro ao salvar dados no arquivo", e);
         }
     }
+
 }

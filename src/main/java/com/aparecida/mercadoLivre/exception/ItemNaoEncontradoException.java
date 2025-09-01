@@ -5,8 +5,7 @@ package com.aparecida.mercadoLivre.exception;
  * Não precisa declarar 'throws' nos métodos
  */
 public class ItemNaoEncontradoException extends RuntimeException {
-
     public ItemNaoEncontradoException(String mensagem) {
-        super(mensagem);
+        super(mensagem); // IMPORTANTE: chamar super()
     }
 }

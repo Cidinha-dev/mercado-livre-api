@@ -1,6 +1,5 @@
 package com.aparecida.mercadoLivre.exception;
 
-import com.aparecida.mercadoLivre.exception.ItemNaoEncontradoException;
 import com.aparecida.mercadoLivre.model.RespostaErro;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +13,7 @@ import java.time.LocalDateTime;
 public class ManipuladorExcecoes {
 
   /**
-   * Este método JÁ captura ItemNaoEncontradoException automaticamente
+   * Este captura itemNaoEncontrado automaticamnete
    * porque ela é uma RuntimeException (e RuntimeException herda de Exception)
    */
   @ExceptionHandler(ItemNaoEncontradoException.class)
@@ -23,7 +22,7 @@ public class ManipuladorExcecoes {
 
     RespostaErro erro = new RespostaErro(
             LocalDateTime.now(),
-            HttpStatus.NOT_FOUND.value(),
+            HttpStatus.NOT_FOUND.value(), // 404 - Não encontrado
             "Item Não Encontrado",
             ex.getMessage(),
             request.getDescription(false).replace("uri=", "")
@@ -49,4 +48,8 @@ public class ManipuladorExcecoes {
 
     return new ResponseEntity<>(erro, HttpStatus.INTERNAL_SERVER_ERROR);
   }
+
+
+
+
 }

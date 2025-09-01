@@ -144,11 +144,3 @@ src/main/java/com/aparecida/mercadoLivre/
     └── ManipuladorExcecoes.java
 ```
 
-
-## 🌐 URLs da Aplicação
-
-- **API Principal**: http://localhost:8080
-- **Health Check**: http://localhost:8080/health
-- **Listar Itens**: http://localhost:8080/api/itens
-- **Listar Itens**: http://localhost:8080/api/itens/descricao
-
