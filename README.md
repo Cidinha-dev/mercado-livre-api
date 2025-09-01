@@ -6,7 +6,7 @@
 
 API RESTful inspirada no Mercado Livre para gerenciamento de detalhes de produtos, com operações CRUD completas e persistência em JSON.
 
-## 🎯 Funcionalidades
+##  Funcionalidades
 
 - ✅ **CRUD Completo** - Create, Read, Update, Delete de itens
 - ✅ **Persistência em JSON** - Dados salvos em arquivo sem necessidade de banco
@@ -14,7 +14,7 @@ API RESTful inspirada no Mercado Livre para gerenciamento de detalhes de produto
 - ✅ **Validações** - Verificação de dados de entrada
 - ✅ **Documentação Automática** - Endpoint raiz com guia de uso
 
-## 🏗️ Arquitetura da Aplicação
+##  Arquitetura da Aplicação
 
 ```mermaid
 graph TB
@@ -46,7 +46,7 @@ graph TB
 
 ```
 
-## 📊 Modelo de Dados
+##  Modelo de Dados
 
 ### Entidade Item
 
@@ -72,7 +72,7 @@ graph TB
 }
 ```
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 | Tecnologia | Versão | Finalidade |
 |------------|---------|------------|
@@ -95,7 +95,7 @@ graph TB
 | `GET` | `/api/itens/{id}/descricao` | Busca apenas descrição |
 | `GET` | `/api/itens/{id}/disponibilidade` | Verifica disponibilidade |
 
-## 🔧 Configuração do Ambiente
+##  Configuração do Ambiente
 
 ### Pré-requisitos
 - **Java 17** ou superior ([Download](https://adoptium.net/))
@@ -114,17 +114,17 @@ mvn -version
 git --version
 ```
 
-## 🚀 Execução Rápida
+##  Execução Rápida
 
 Consulte [run.md](run.md) para comandos detalhados de execução.
 
-## 🧪 Testando a API
+##  Testando a API
 
 ### Com Postman
 1. Importe a coleção: `postman/MercadoLivre-API.postman_collection.json`
 
 
-## 📝 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 src/main/java/com/aparecida/mercadoLivre/
