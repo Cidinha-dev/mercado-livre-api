@@ -16,35 +16,6 @@ API RESTful inspirada no Mercado Livre para gerenciamento de detalhes de produto
 
 ##  Arquitetura da Aplicação
 
-```mermaid
-graph TB
-    Cliente[Cliente Frontend] --> API[API REST Spring Boot]
-    
-    subgraph "Camada de Apresentação"
-        API --> Controller[Controller REST]
-    end
-    
-    subgraph "Camada de Negócio"
-        Controller --> Service[Service Layer]
-    end
-    
-    subgraph "Camada de Persistência"
-        Service --> Repository[Repository]
-        Repository --> JSON[Arquivos JSON]
-    end
-    
-    subgraph "Gerenciamento de Erros"
-        Controller --> Exception[Exception Handler]
-        Exception --> Response[Resposta Padronizada]
-    end
-    
-    style API fill:#e1f5fe
-    style Controller fill:#f3e5f5
-    style Service fill:#e8f5e8
-    style Repository fill:#fff3e0
-
-
-```
 
 ##  Modelo de Dados
 
